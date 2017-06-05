@@ -7,7 +7,8 @@
     "content": "CC­BY­NC­SA 4.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "zingchart": "^2.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -31,6 +32,7 @@
     "handlebars": "^4.0.5",
     "handlebars-loader": "^1.4.0",
     "html-loader": "^0.4.4",
+    "json-loader": "^0.5.4",
     "load-grunt-config": "^0.19.2",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.10.1",

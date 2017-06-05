@@ -8,7 +8,7 @@ module.exports = {
     entry: {
       application: './index.js',
       specs: './spec/_all.js',
-      vendor: ['jquery', 'bootstrap-sass'],
+      vendor: ['jquery', 'bootstrap-sass', 'zingchart'],
     },
 
     output: {
@@ -65,6 +65,9 @@ module.exports = {
               __dirname + '/../assets/scripts/templates/helpers',
             ],
           },
+        },
+        {
+          test: /\.json$/, loader: 'json'
         },
       ],
     },
