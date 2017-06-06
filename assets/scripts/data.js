@@ -16,9 +16,9 @@ for (let state in cycleOne){
       //  console.log(cycleOne[state])
      for (let candidate in cycleOne[state]){
        if(cycleOne[state].hasOwnProperty(candidate)){
-              //  console.log(cycleOne[state][candidate])
+          // console.log(cycleOne[state][candidate])
 let electObj = cycleOne[state][candidate]
-        //  console.log(electObj)
+        // console.log(electObj)
          twoThousandAndFourCycle.push(electObj)
        }
          }
@@ -28,6 +28,21 @@ let electObj = cycleOne[state][candidate]
  console.log(twoThousandAndFourCycle[2].name)
 
 //calculate winner per state
+// let winningCandidate = [];
+
+// twoThousandAndFourCycle.forEach(function (state) {
+//   state.
+// })
+
+      // function winCandidate(electObj) {
+      //
+      //   return electObj.votes.reduce(function(a,b){
+      //       console.log(electObj.votes);
+      //     return Math.max(a-b)
+      // })
+
+ let stateObj = new Object()
+
 
 
 // 2008 cycle
@@ -45,6 +60,7 @@ let electObj = cycleOne[state][candidate]
       }
   }
    console.log(twoThousandAndEightCycle[0])
+
 
 
 // 2012 cycle
