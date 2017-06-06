@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags unless you know what you are doing -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Election Result Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags unless you know what you are doing -->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
-    </body>
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <!-- <script type="text/javascript" src="./assets/scripts/data/results_2008.json"></script> -->
+</head>
+
+
+
+<header class="main-header" role="banner">
+  <img src="https://github.com/AshlenPrice/election-results-dasboard/blob/planning_and_setup/banner1.png?raw=true" alt="Banner Image" />
+</header>
+
+
+<body class="container-fluid.no-padding">
+
+  <main>
+    <h1>Presidential Election Voting Trends Accross the US</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+
+    <!--Chart Placement-->
+    <div id="cycleTwoMap"></div>
+
+    <div id="myChart"></div>
+  </main>
+
+  <!-- Form  -->
+  <h3>Please enter vote count data in the form below.</h3>
+  <form id="myForm" action="submit" enctype="multipart/form-data" method="post" name="formResponse">
+
+    <div class="form-group">
+      <label for="states">Please enter a state</label>
+      <input type="text" class="form-control" id="states" placeholder="State">
+    </div>
+
+    <div class="form-group">
+      <label for="candidate">Please enter a candidates names</label>
+      <input type="text" class="form-control" id="candidate" placeholder="Candidate Name">
+    </div>
+
+    <div class="form-group">
+      <label for="votes">Please enter votes total</label>
+      <input type="text" class="form-control" id="votes" placeholder="Number of Votes">
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+
+  </form>
+
+  <pre class="debug"></pre>
+
+</body>
+
 </html>

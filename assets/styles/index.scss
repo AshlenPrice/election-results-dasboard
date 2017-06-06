@@ -1,2 +1,22 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+header .main-header {
+  background-image: url('../../banner1.png');
+  background-size: cover;
+  padding: 0;
+    width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.container-fluid.no-padding {
+  padding: 0;
+}
+
+main {
+  padding: 15px;
+}
