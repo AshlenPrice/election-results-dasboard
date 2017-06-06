@@ -35,32 +35,36 @@
     <div id="cycleTwoMap"></div>
 
     <div id="myChart"></div>
+
+    <!-- Form  -->
+    <h3>Please enter vote count data in the form below.</h3>
+    <form id="myForm" action="submit" enctype="multipart/form-data" method="post" name="formResponse">
+
+      <div class="form-group">
+        <label for="states">Please enter a state</label>
+        <input type="text" class="form-control" id="states" placeholder="State">
+      </div>
+
+      <div class="form-group">
+        <label for="candidate">Please enter a candidates names</label>
+        <input type="text" class="form-control" id="candidate" placeholder="Candidate Name">
+      </div>
+
+      <div class="form-group">
+        <label for="votes">Please enter votes total</label>
+        <input type="text" class="form-control" id="votes" placeholder="Number of Votes">
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+
+    <pre class="debug"></pre>
+
+
   </main>
 
-  <!-- Form  -->
-  <h3>Please enter vote count data in the form below.</h3>
-  <form id="myForm" action="submit" enctype="multipart/form-data" method="post" name="formResponse">
 
-    <div class="form-group">
-      <label for="states">Please enter a state</label>
-      <input type="text" class="form-control" id="states" placeholder="State">
-    </div>
-
-    <div class="form-group">
-      <label for="candidate">Please enter a candidates names</label>
-      <input type="text" class="form-control" id="candidate" placeholder="Candidate Name">
-    </div>
-
-    <div class="form-group">
-      <label for="votes">Please enter votes total</label>
-      <input type="text" class="form-control" id="votes" placeholder="Number of Votes">
-    </div>
-
-    <button type="submit" class="btn btn-default">Submit</button>
-
-  </form>
-
-  <pre class="debug"></pre>
 
 </body>
 
